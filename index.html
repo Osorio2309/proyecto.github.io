@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Netflix</title>
+</head>
+
+<body>
+    <header>
+        <h1>NETFLIX</h1>
+        <nav>
+            <form action="#">
+                <label for="lang"></label>
+                <select name="lenguajes" id="lang">
+                    <option value="Español">Español</option>
+                    <option value="English">English</option>
+                </select>
+            </form>
+            <input type="button" value="Iniciar sesión">
+        </nav>
+    </header>
+
+    <main>
+        <h1>Películas y series ilimitadas y mucho más</h1>
+        <h2>Disfruta donde quieras. Cancela cuando quieras.</h2>
+        <h3>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h3>
+        <div class="form-container">
+            <div class="email-form-container">
+            <form action="#" class="email-form">
+                <label for="email"></label>
+                <input type="text" id="email" placeholder="Email">
+            </form>
+                <div class="error-message">
+                    <span class="error-text">El email es obligatorio.</span>
+                </div>
+            </div>
+            <input type="button" value="Comenzar >">
+        </div>
+        
+        
+    </main>
+    <footer>
+        <section class="faq-section">
+            <h1><strong>Preguntas frecuentes</strong></h1>
+            <ul>
+                <li class="faq-item" onclick="toggleAnswer(this)">
+                    <strong>¿Qué es Netflix?<span class="plus-sign">+</span></strong>
+                    <p class="respuesta">Netflix es un servicio de streaming que ofrece una gran variedad de películas, series y documentales premiados en casi cualquier pantalla conectada a internet.
+
+                        Todo lo que quieras ver, a un costo mensual muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas las semanas se agregan más películas y series!</p>
+                </li>
+                <li class="faq-item" onclick="toggleAnswer(this)">
+                    <strong>¿Cuánto cuesta Netflix?<span class="plus-sign">+</strong>
+                    <p class="respuesta">Disfruta Netflix en tu smartphone, tablet, smart TV, laptop o dispositivo de streaming, todo por una tarifa plana mensual. Planes desde $99 hasta $299 al mes. Sin costos adicionales ni contratos.</p>
+                </li>
+                <li class="faq-item" onclick="toggleAnswer(this)">
+                    <strong>¿Dónde puedo ver Netflix?<span class="plus-sign">+</strong>
+                    <p class="respuesta">Disfruta donde quieras, cuando quieras. Inicia sesión en tu cuenta de Netflix para ver contenido al instante a través de netflix.com desde tu computadora personal o en cualquier dispositivo con conexión a internet que cuente con la app de Netflix, como smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos.
+
+                        Además, puedes descargar tus series favoritas con iOS, Android o la app para Windows 10. Con la función de descarga, puedes ver donde vayas y sin conexión a internet. Lleva Netflix contigo adonde sea.</p>
+                </li>
+                <li class="faq-item" onclick="toggleAnswer(this)">
+                    <strong>¿Cómo cancelo?<span class="plus-sign">+</strong>
+                    <p class="respuesta">Netflix es flexible. Sin contratos molestos ni compromisos. Cancela la membresía online con solo dos clics. No hay cargos por cancelación. Empieza y termina cuando quieras.</p>
+                </li>
+                <li class="faq-item" onclick="toggleAnswer(this)">
+                    <strong>¿Qué puedo ver en Netflix?<span class="plus-sign">+</strong>
+                    <p class="respuesta">Netflix tiene un amplio catálogo de películas, series, documentales, animes, originales premiados y más. Todo lo que quieras ver, cuando quieras.</p>
+                </li>
+                <li class="faq-item" onclick="toggleAnswer(this)">
+                    <strong>¿Es bueno Netflix para los niños?<span class="plus-sign">+</strong>
+                    <p class="respuesta">La experiencia de Netflix para niños está incluida en la membresía para que los padres tengan el control mientras los peques disfrutan series y películas familiares en su propio espacio. Los perfiles para niños incluyen controles parentales protegidos por PIN que te permiten restringir el contenido que pueden ver los niños en función de la clasificación por edad y bloquear determinados títulos que no quieras que los niños vean.</p>
+                </li>
+            </ul>
+            
+        </section>
+        <p>¿Preguntas? Llama al 800 953 1430</p>
+        <section>
+            <ul class="button-list">
+                <li><button>Frecuentes</button></li>
+                <li><button>con inversionistas</button></li>
+                <li><button>tarjetas de regalo</button></li>
+                <li><button>Preferencias de cookies</button></li>
+                <li><button>Avisos legales</button></li>
+                <li><button>Centro de ayuda</button></li>
+                <li><button>Empleo</button></li>
+                <li><button>Formas de ver</button></li>
+                <li><button>Información corporativa</button></li>
+                <li><button>Solo en Netflix</button></li>
+                <li><button>Cuenta</button></li>
+                <li><button>Tienda de Netflix</button></li>
+                <li><button>Términos de uso</button></li>
+                <li><button>Contáctanos</button></li>
+                <li><button>Prensa</button></li>
+                <li><button>Canjear tarjetas de regalo</button></li>
+                <li><button>Privacidad</button></li>
+                <li><button>Prueba de velocidad</button></li>
+            </ul>
+        </section>
+        <nav>
+            <form action="#">
+                <label for="lang"></label>
+                <select name="lenguajes" id="lang">
+                    <option value="Español">Español</option>
+                    <option value="English">English</option>
+                </select>
+            </form>
+            <p>Netflix México</p>
+        </nav>
+
+    </footer>
+    <script src="./functions.js"></script>
+</body>
+</html>

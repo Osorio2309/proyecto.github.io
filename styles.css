@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+body {
+    background-image: url(./images/peliculas.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #FFFFFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: red;
+    margin-left: 20px;
+    font-size: 4em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+input[type="button"] {
+    background-color: red;
+    color: #FFFFFF;
+    margin-right: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form {
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+select,
+input[type="text"] {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFFFFF;
+    border: 1px solid red;
+    padding: 15px;
+    margin: 5px 0;
+    flex-grow: 1;
+}
+
+main {
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 0px;
+}
+
+main h1 {
+    font-size: 7em;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: center;
+    margin-bottom: 20px;
+    max-width: 300px;
+    margin: auto;
+    height: 50px;
+}
+
+.email-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-right: 10px;
+}
+
+form.email-form {
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.error-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+    margin-top: 0px;
+}
+
+.error-text {
+    display: inline-block;
+}
+
+input[type="button"] {
+    background-color: red;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 14px;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 70px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    position:relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+main section.faq-section {
+    display:flex;
+    align-items:normal;
+    background-color: black;
+    margin-bottom: 40px;
+}
+
+section h1 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    background-color: rgb(88, 87, 87);
+    padding: 10px;
+}
+
+li strong {
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+
+.respuesta {
+    display: none;
+    color: white;
+}
+
+li.active .respuesta {
+    display: block;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 10px solid #333;
+    margin-top: 10px;
+    
+}
+
+footer .button-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-list li {
+    flex-basis: 23%;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+footer section .button-list button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+footer section ul.plus-sign{
+    display: flex;
+    justify-content:center;
+}
+
+.plus-sign {
+    float: right;
+}
